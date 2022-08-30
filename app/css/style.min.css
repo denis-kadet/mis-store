@@ -575,9 +575,42 @@ body {
   padding: 0 15px;
   width: 100%; }
 
+.red__star {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("./images/red_star.jpg") no-repeat center center/contain transparent; }
+
 @media (max-width: 992px) {
   .container {
     max-width: 960px; } }
+
+.block-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-bottom: 100px; }
+  .block-1__title {
+    margin: 0;
+    padding: 0;
+    font-family: 'intermedium';
+    font-size: 72px;
+    line-height: 87px;
+    color: #161513; }
+  .block-1__text {
+    font-family: 'interregular';
+    font-size: 56px;
+    line-height: 68px;
+    color: #161513; }
+  .block-1__desr {
+    font-family: 'interregular';
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    color: #161513; }
 
 .header__wrap {
   display: flex;
