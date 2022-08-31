@@ -947,6 +947,49 @@ body {
   align-items: center;
   margin: 137px 0; }
 
+.block-5__text {
+  font-family: 'intermedium';
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000; }
+
+.slider__img img {
+  max-width: 393px;
+  height: 500px; }
+
+.block-5 .slick-next::before {
+  content: url(./images/icons/arrow-right.svg); }
+
+.block-5 .slick-prev::before {
+  content: url(./images/icons/arrow-left.svg); }
+
+.block-5 .slick-prev,
+.block-5 .slick-next {
+  width: 56px;
+  height: 56px;
+  z-index: 1; }
+
+.block-5 .slick-prev {
+  left: 24px; }
+
+.block-5 .slick-next {
+  right: 48px; }
+
+.block-5__slider-wrap {
+  margin-top: 45px;
+  margin-bottom: 137px; }
+
+.block-6 {
+  margin: 0 auto;
+  max-width: 883px; }
+  .block-6__comp {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+    margin-bottom: 137px; }
+
 .header__wrap {
   display: flex;
   justify-content: space-between;

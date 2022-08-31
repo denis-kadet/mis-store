@@ -1,0 +1,10 @@
+.block-6 {
+    margin: 0 auto;
+    max-width: 883px;
+    &__comp {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 46px;
+        margin-bottom: 137px;
+    }
+}

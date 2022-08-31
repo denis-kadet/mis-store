@@ -24,4 +24,10 @@ $(document).ready(function() {
         startVisible: true,
         duplicated: true
     });
+    $('.block-5__slider-wrap').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: false,
+    });
 })
