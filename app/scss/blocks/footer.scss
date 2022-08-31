@@ -1,0 +1,100 @@
+.footer {
+    padding-top: 63px;
+    background: #161513;
+    &__wrap {
+        margin: 0 auto;
+        max-width: 1060px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__insta {
+        display: block;
+        width: 56px;
+        height: 56px;
+        background: url('./images/icons/footer__insta.svg') no-repeat center center/contain transparent;
+        text-align: center;
+    }
+    &__in {
+        display: block;
+        width: 56px;
+        height: 56px;
+        background: url('./images/icons/footer__in.svg') no-repeat center center/contain transparent;
+        text-align: center;
+    }
+    &__youtube {
+        display: block;
+        width: 56px;
+        height: 56px;
+        background: url('./images/icons/footer__youtube.svg') no-repeat center center/contain transparent;
+        text-align: center;
+    }
+}
+
+.footer {
+    &__title {
+        margin-bottom: 10px;
+        font-family: 'intermedium';
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+    &__decr {
+        font-family: 'interregular';
+        font-size: 12px;
+        line-height: 15px;
+        color: #F2F1EF;
+    }
+    &__tel {
+        margin-bottom: 21px;
+    }
+    &__addres {
+        margin-bottom: 21px;
+    }
+}
+
+.footer__nav {
+    margin: 0;
+    padding: 0;
+    &-item {
+        list-style-type: none;
+    }
+    &-link {
+        font-family: 'intermedium';
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+}
+
+.footer__block {
+    &-wrap {
+        display: flex;
+        width: 444px;
+        justify-content: space-between;
+    }
+    &-2 {
+        max-width: 210px;
+    }
+}
+
+.footer {
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        width: 470px;
+    }
+    &__soc {
+        display: flex;
+        justify-content: end;
+    }
+    &__link {
+        list-style: none;
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+    }
+}
