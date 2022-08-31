@@ -1,0 +1,249 @@
+.block-4 {
+    &__title-wrap {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        margin-bottom: 16px;
+        font-family: 'intermedium';
+        font-size: 56px;
+        line-height: 68px;
+        text-align: center;
+        color: #161513;
+    }
+}
+
+.block-4__link a {
+    font-family: 'intermedium';
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E71616;
+    text-decoration: none;
+}
+
+.cart {
+    &__title {
+        font-family: 'intermedium';
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0.64px;
+        color: #161513;
+    }
+}
+
+.desr__text {
+    &-1 {
+        max-width: 450px;
+        font-family: 'interregular';
+        font-size: 18px;
+        line-height: 27px;
+        color: #000000;
+    }
+    &-2 {
+        max-width: 450px;
+        font-family: 'interregular';
+        font-size: 18px;
+        line-height: 27px;
+        color: #000000;
+    }
+}
+
+.cart__icon {
+    &-1 {
+        display: block;
+        width: 160px;
+        height: 160px;
+        background: url('./images/icons/block-4-1-b.svg') no-repeat center center/contain transparent;
+        text-align: center;
+    }
+    &-2 {
+        display: block;
+        width: 160px;
+        height: 160px;
+        background: url('./images/icons/block-4-2-b.svg') no-repeat center center/contain transparent;
+        text-align: center;
+        &:hover {
+            background: url('./images/icons/block-4-2-o.svg') no-repeat center center/contain transparent;
+        }
+    }
+    &-3 {
+        display: block;
+        width: 160px;
+        height: 160px;
+        background: url('./images/icons/block-4-3-b.svg') no-repeat center center/contain transparent;
+        text-align: center;
+    }
+    &-4 {
+        display: block;
+        width: 160px;
+        height: 160px;
+        background: url('./images/icons/block-4-4-b.svg') no-repeat center center/contain transparent;
+        text-align: center;
+    }
+    &-5 {
+        display: block;
+        width: 160px;
+        height: 160px;
+        background: url('./images/icons/block-4-5-b.svg') no-repeat center center/contain transparent;
+        text-align: center;
+    }
+    &-6 {
+        display: block;
+        width: 160px;
+        height: 160px;
+        background: url('./images/icons/block-4-6-b.svg') no-repeat center center/contain transparent;
+        text-align: center;
+    }
+}
+
+.block-4__cart {
+    &-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 45px;
+    }
+    &-1 {
+        display: grid;
+        align-content: space-between;
+        justify-items: end;
+        padding: 50px;
+        height: 500px;
+        border-width: 1px 0px 1px 1px;
+        border-style: solid;
+        border-color: #161513;
+    }
+    &-2 {
+        display: grid;
+        align-content: space-between;
+        justify-items: end;
+        padding: 50px;
+        border-width: 1px 0px 1px 1px;
+        border-style: solid;
+        border-color: #161513;
+        height: 500px;
+    }
+    &-3 {
+        display: grid;
+        align-content: space-between;
+        justify-items: end;
+        padding: 50px;
+        border-width: 1px 1px 1px 1px;
+        border-style: solid;
+        border-color: #161513;
+        height: 500px;
+    }
+    &-4 {
+        display: grid;
+        align-content: space-between;
+        justify-items: end;
+        padding: 50px;
+        border-width: 1px 0px 1px 1px;
+        border-style: solid;
+        border-color: #161513;
+        height: 500px;
+    }
+    &-5 {
+        display: grid;
+        align-content: space-between;
+        justify-items: end;
+        padding: 50px;
+        border-width: 1px 0px 1px 1px;
+        border-style: solid;
+        border-color: #161513;
+        height: 500px;
+    }
+    &-6 {
+        display: grid;
+        align-content: space-between;
+        justify-items: end;
+        padding: 50px;
+        border-width: 1px 1px 1px 1px;
+        border-style: solid;
+        border-color: #161513;
+        height: 500px;
+        cursor: pointer;
+    }
+    &-link {
+        text-decoration: none;
+    }
+}
+
+.block-4__cart {
+    &-1:hover .cart__icon-1 {
+        background: url('./images/icons/block-4-1-o.svg') no-repeat center center/contain transparent;
+    }
+    &-2:hover .cart__icon-2 {
+        background: url('./images/icons/block-4-2-o.svg') no-repeat center center/contain transparent;
+    }
+    &-3:hover .cart__icon-3 {
+        background: url('./images/icons/block-4-3-o.svg') no-repeat center center/contain transparent;
+    }
+    &-4:hover .cart__icon-4 {
+        background: url('./images/icons/block-4-4-o.svg') no-repeat center center/contain transparent;
+    }
+    &-5:hover .cart__icon-5 {
+        background: url('./images/icons/block-4-5-o.svg') no-repeat center center/contain transparent;
+    }
+    &-6:hover .cart__icon-6 {
+        background: url('./images/icons/block-4-6-o.svg') no-repeat center center/contain transparent;
+    }
+}
+
+.block-4__cart {
+    &-1:hover .cart__title {
+        color: #FFFFFF;
+    }
+    &-2:hover .cart__title {
+        color: #FFFFFF;
+    }
+    &-3:hover .cart__title {
+        color: #FFFFFF;
+    }
+    &-4:hover .cart__title {
+        color: #FFFFFF;
+    }
+    &-5:hover .cart__title {
+        color: #FFFFFF;
+    }
+    &-6:hover .cart__title {
+        color: #FFFFFF;
+    }
+}
+
+.block-4__cart {
+    &-1:hover {
+        background: #161513;
+        border: 1px solid #161513;
+    }
+    &-2:hover {
+        background: #161513;
+        border: 1px solid #161513;
+    }
+    &-3:hover {
+        background: #161513;
+        border: 1px solid #161513;
+    }
+    &-4:hover {
+        background: #161513;
+        border: 1px solid #161513;
+    }
+    &-5:hover {
+        background: #161513;
+        border: 1px solid #161513;
+    }
+    &-6:hover {
+        background: #161513;
+        border: 1px solid #161513;
+    }
+}
+
+.block-4__desr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 137px 0;
+}
