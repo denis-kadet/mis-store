@@ -19,4 +19,9 @@ $(document).ready(function() {
             }
         });
     });
+    $('.block-2__text').marquee({
+        duration: 15000,
+        startVisible: true,
+        duplicated: true
+    });
 })
