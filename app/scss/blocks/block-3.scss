@@ -94,6 +94,9 @@
 
 @media(max-width: 576px) {
     .block-3__inner {
+        text-align: start;
+    }
+    .block-3__inner {
         flex-direction: column;
     }
     .block-3__wrap {

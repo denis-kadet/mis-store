@@ -41,8 +41,10 @@
         max-width: 241px;
         height: 98px;
         &:not(:last-child) {
-            margin-top: 0;
             margin-bottom: 40px;
         }
+    }
+    .comp__img:last-child {
+        margin-top: 0;
     }
 }

@@ -21,7 +21,7 @@ body {
 }
 
 .red__star-40 {
-    margin-bottom: 16px;
+    display: inline-block;
     width: 40px;
     height: 40px;
     background: url('./images/red_star_40_40.png') no-repeat center center/contain transparent;
@@ -35,6 +35,26 @@ body {
     background: url('./images/black_star.png') no-repeat center center/contain transparent;
 }
 
+.title__text {
+    font-family: 'intermedium';
+    font-size: 56px;
+    line-height: 68px;
+    color: #161513;
+}
+
+.desc__text {
+    font-family: 'interregular';
+    font-size: 32px;
+    line-height: 40px;
+    color: #161513;
+    &-1 {
+        font-family: 'interregular';
+        font-size: 18px;
+        line-height: 32px;
+        color: #161513;
+    }
+}
+
 @media (max-width: 992px) {
     .container {
         max-width: 960px;
@@ -46,6 +66,10 @@ body {
         margin-bottom: 12px;
         width: 30px;
         height: 30px;
+    }
+    .title__text {
+        font-size: 48px;
+        line-height: 58px;
     }
 }
 
