@@ -9,6 +9,7 @@
     &__wrap {
         margin: 0 auto;
         max-width: 1060px;
+        padding: 0 15px;
     }
     &__insta {
         display: block;
@@ -175,4 +176,47 @@
     text-align: center;
     letter-spacing: 0.42px;
     color: #757575;
+}
+
+.d-md-none {
+    display: none;
+}
+
+@media(max-width:576px) {
+    .footer__nav {
+        display: none;
+    }
+    .footer__block-wrap {
+        flex-direction: column;
+    }
+    .footer__wrap {
+        padding: 0 24px;
+        max-width: 567px;
+    }
+    .footer__addres {
+        margin-top: 21px;
+    }
+    .d-sm-none {
+        display: none;
+    }
+    .d-sm-block {
+        display: block;
+    }
+    .footer__link:not(:last-child) {
+        margin-bottom: 16px;
+        margin-right: 0;
+    }
+    .footer__logo-smg {
+        width: 100%;
+    }
+    .footer__middle {
+        flex-wrap: wrap;
+    }
+    .logo__smg-text {
+        justify-content: center;
+        margin-top: 24px;
+    }
+    .footer__down {
+        padding: 18px 0 15px 0;
+    }
 }
