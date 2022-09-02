@@ -36,8 +36,16 @@ $(document).ready(function() {
                 slidesToScroll: 1,
                 infinite: true,
                 dots: false,
-                // centerMode: true,
-                // variableWidth: true
+
+            }
+        }, {
+            breakpoint: 950,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+                centerPadding: '40px',
             }
         }, ]
     });

@@ -1,7 +1,7 @@
 .block-3 {
     &__wrap {
         margin: 0 auto;
-        padding-top: 196px;
+        padding: 196px 15px 0 15px;
         padding-bottom: 137px;
         max-width: 1060px;
     }
@@ -72,6 +72,23 @@
         line-height: 32px;
         letter-spacing: 0.48px;
         color: #161513;
+    }
+}
+
+@media(max-width: 950px) {
+    .block-3__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .block-3__left {
+        max-width: 100%;
+    }
+    .block-3__wrap {
+        padding: 80px 15px 98px 15px;
+    }
+    .block-3__left-text_2 {
+        margin-bottom: 30px;
     }
 }
 
