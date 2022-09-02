@@ -107,6 +107,7 @@
     }
     .header__logo-link img {
         height: 46px;
+        transform: translateX(40px);
     }
     //burger btn
     .menu__burger {
@@ -169,7 +170,10 @@
     .mobile__nav {
         position: absolute;
         top: 78px;
-        left: 24px;
+        left: 0px;
+        padding-left: 24px;
+        width: 100%;
+        background: #F5F5F5;
         &-items {
             margin: 0;
             padding: 0;
@@ -245,6 +249,7 @@
         text-align: center;
         width: 100%;
         right: 0;
+        padding-left: 0;
     }
     .mobile__nav-item {
         margin-bottom: 30px;

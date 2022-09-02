@@ -1,12 +1,14 @@
 .footer {
     padding-top: 63px;
     background: #161513;
-    &__wrap {
-        margin: 0 auto;
-        max-width: 1060px;
+    &__up {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    &__wrap {
+        margin: 0 auto;
+        max-width: 1060px;
     }
     &__insta {
         display: block;
@@ -44,6 +46,13 @@
         font-size: 12px;
         line-height: 15px;
         color: #F2F1EF;
+        &-link {
+            font-family: 'interregular';
+            font-size: 12px;
+            line-height: 15px;
+            color: #F2F1EF;
+            text-decoration: none;
+        }
     }
     &__tel {
         margin-bottom: 21px;
@@ -78,6 +87,11 @@
     &-2 {
         max-width: 210px;
     }
+    &-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
 }
 
 .footer {
@@ -89,7 +103,8 @@
     }
     &__soc {
         display: flex;
-        justify-content: end;
+        margin: 0;
+        padding: 0;
     }
     &__link {
         list-style: none;
@@ -97,4 +112,67 @@
             margin-right: 16px;
         }
     }
+}
+
+.footer {
+    &__btn {
+        padding: 12px 15px;
+        width: 219px;
+        height: 56px;
+        background: #E94D35;
+        &-link {
+            font-family: 'interregular';
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: 0.48px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+}
+
+.logo__smg {
+    display: block;
+    width: 110px;
+    height: 70px;
+    background: url('./images/icons/logo-smg.svg') no-repeat center center/contain transparent;
+    text-align: center;
+}
+
+.footer__btn-up {
+    display: block;
+    width: 56px;
+    height: 56px;
+    background: url('./images/icons/arrow-up.svg') no-repeat center center/contain transparent;
+    text-align: center;
+}
+
+.footer__middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.logo__smg-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'intermedium';
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer__down {
+    padding: 46px 0 15px 0;
+    font-family: 'robotoregular';
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.42px;
+    color: #757575;
 }

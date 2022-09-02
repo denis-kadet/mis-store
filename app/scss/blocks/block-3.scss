@@ -74,3 +74,41 @@
         color: #161513;
     }
 }
+
+@media(max-width: 576px) {
+    .block-3__inner {
+        flex-direction: column;
+    }
+    .block-3__wrap {
+        padding: 98px 15px;
+    }
+    .block-3__left {
+        &-text_1 {
+            font-size: 14px;
+            line-height: 32px;
+            letter-spacing: 0.48px;
+        }
+        &-text_2 {
+            margin-bottom: 72px;
+            font-size: 48px;
+            line-height: 58px;
+        }
+    }
+    .block-3__right {
+        &-text_1 {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        &-text_2 {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        &-text_3 {
+            flex-direction: unset;
+            flex-wrap: wrap;
+        }
+    }
+    .right__text {
+        word-wrap: break-word;
+    }
+}

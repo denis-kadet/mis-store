@@ -39,3 +39,30 @@
     margin-top: 45px;
     margin-bottom: 137px;
 }
+
+@media(max-width: 576px) {
+    .block-5 {
+        &__text {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .block-5__slider-wrap {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .slider__img {
+        display: flex !important;
+        justify-content: center;
+    }
+    .slider__img img {
+        max-width: 336px;
+        height: 424px;
+    }
+    .block-5 .slick-prev {
+        left: 8px;
+    }
+    .block-5 .slick-next {
+        right: 8px;
+    }
+}

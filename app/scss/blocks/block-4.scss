@@ -66,9 +66,6 @@
         height: 160px;
         background: url('./images/icons/block-4-2-b.svg') no-repeat center center/contain transparent;
         text-align: center;
-        &:hover {
-            background: url('./images/icons/block-4-2-o.svg') no-repeat center center/contain transparent;
-        }
     }
     &-3 {
         display: block;
@@ -103,7 +100,7 @@
 .block-4__cart {
     &-inner {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(336px, 1fr));
         margin-top: 45px;
     }
     &-1 {
@@ -141,7 +138,7 @@
         align-content: space-between;
         justify-items: end;
         padding: 50px;
-        border-width: 1px 0px 1px 1px;
+        border-width: 0px 0px 1px 1px;
         border-style: solid;
         border-color: #161513;
         height: 500px;
@@ -151,7 +148,7 @@
         align-content: space-between;
         justify-items: end;
         padding: 50px;
-        border-width: 1px 0px 1px 1px;
+        border-width: 0px 0px 1px 1px;
         border-style: solid;
         border-color: #161513;
         height: 500px;
@@ -161,7 +158,7 @@
         align-content: space-between;
         justify-items: end;
         padding: 50px;
-        border-width: 1px 1px 1px 1px;
+        border-width: 0px 1px 1px 1px;
         border-style: solid;
         border-color: #161513;
         height: 500px;
@@ -184,12 +181,14 @@
     }
     &-4:hover .cart__icon-4 {
         background: url('./images/icons/block-4-4-o.svg') no-repeat center center/contain transparent;
+        transform: translateY(9px);
     }
     &-5:hover .cart__icon-5 {
         background: url('./images/icons/block-4-5-o.svg') no-repeat center center/contain transparent;
     }
     &-6:hover .cart__icon-6 {
         background: url('./images/icons/block-4-6-o.svg') no-repeat center center/contain transparent;
+        transform: translateY(9px);
     }
 }
 
@@ -246,4 +245,109 @@
     justify-content: space-around;
     align-items: center;
     margin: 137px 0;
+}
+
+@media(max-width: 1037px) {
+    .block-4__cart {
+        &-1 {
+            border-width: 1px 0px 1px 1px;
+        }
+        &-2 {
+            border-width: 1px 1px 1px 1px;
+        }
+        &-3 {
+            border-width: 0px 0px 1px 1px;
+        }
+        &-4 {
+            border-width: 0px 1px 1px 1px;
+        }
+        &-5 {
+            border-width: 0px 0px 1px 1px;
+        }
+        &-6 {
+            border-width: 0px 1px 1px 1px;
+        }
+    }
+}
+
+@media(max-width: 701px) {
+    .block-4__cart {
+        &-1 {
+            border-width: 1px 1px 0px 1px;
+        }
+        &-2 {
+            border-width: 1px 1px 1px 1px;
+        }
+        &-3 {
+            border-width: 0px 1px 1px 1px;
+        }
+        &-4 {
+            border-width: 0px 1px 1px 1px;
+        }
+        &-5 {
+            border-width: 0px 1px 1px 1px;
+        }
+        &-6 {
+            border-width: 0px 1px 1px 1px;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .block-4 {
+        &__title {
+            margin-bottom: 12px;
+            font-size: 48px;
+            line-height: 58px;
+        }
+        &__link {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__desr {
+            flex-direction: column;
+            margin: 72px 0 100px 0;
+        }
+    }
+    .desr__text {
+        &-1 {
+            margin-bottom: 50px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        &-2 {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    .cart__title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .cart__icon {
+        &-1 {
+            width: 120px;
+            height: 120px;
+        }
+        &-2 {
+            width: 120px;
+            height: 120px;
+        }
+        &-3 {
+            width: 120px;
+            height: 120px;
+        }
+        &-4 {
+            width: 120px;
+            height: 120px;
+        }
+        &-5 {
+            width: 120px;
+            height: 120px;
+        }
+        &-6 {
+            width: 120px;
+            height: 120px;
+        }
+    }
 }

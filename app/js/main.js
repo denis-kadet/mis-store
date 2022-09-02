@@ -29,5 +29,21 @@ $(document).ready(function() {
         slidesToShow: 3,
         slidesToScroll: 3,
         dots: false,
+        responsive: [{
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+                // centerMode: true,
+                // variableWidth: true
+            }
+        }, ]
+    });
+    //прокрутка вверх 
+    $('#scroll_top').click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 600);
+        return false;
     });
 })
