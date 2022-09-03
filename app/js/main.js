@@ -80,22 +80,22 @@ $(document).ready(function() {
         return false;
     });
     //tabs
-    var tab = $('#tabs .tabs__items > div');
-    tab.hide().filter(':first').show();
+    var tabServ = $('#tabs .tabs__items > div');
+    tabServ.hide().filter(':first').show();
 
     // Клики по вкладкам.
     $('#tabs .tabs__nav-items a').click(function() {
-        tab.hide();
-        tab.filter(this.hash).show();
+        tabServ.hide();
+        tabServ.filter(this.hash).show();
         $('#tabs .tabs__nav-items a').removeClass('active__nav');
         $(this).addClass('active__nav');
         return false;
     }).filter(':first').click();
 
     // Клики по якорным ссылкам.
-    $('.tabs-target').click(function() {
-        $('#tabs .tabs__nav-items a[href=' + $(this).attr('href') + ']').click();
-    });
+    // $('.tabs-target').click(function() {
+    //     $('#tabs .tabs__nav-items a[href=' + $(this).attr('href') + ']').click();
+    // });
 
     // Отрытие вкладки из хеша URL
     if (window.location.hash) {

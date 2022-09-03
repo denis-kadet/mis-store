@@ -76,3 +76,28 @@
         color: rgba(22, 21, 19, 0.5);
     }
 }
+
+@media(max-width:700px) {
+    .form__block {
+        &-1 {
+            flex-direction: column;
+            margin-bottom: 24px;
+        }
+        &-2 {
+            flex-direction: column;
+            margin-bottom: 24px;
+        }
+        &-4 {
+            flex-direction: column;
+        }
+    }
+    .form__input {
+        width: 100%;
+        &-name {
+            margin-bottom: 24px;
+        }
+        &-email {
+            margin-bottom: 24px;
+        }
+    }
+}
