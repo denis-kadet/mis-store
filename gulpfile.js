@@ -89,6 +89,7 @@ function copyIcons() {
 const libs = [
     './node_modules/jquery/dist/jquery.min.js',
     './node_modules/jquery.marquee/jquery.marquee.min.js',
+    // './node_modules/jquery-ui/dist/jquery-ui.min.js',
     // './node_modules/jquery-migrate/dist/jquery-migrate.min.js',
     './node_modules/slick-slider/slick/slick.min.js',
     './node_modules/accordionjs/accordion.min.js',

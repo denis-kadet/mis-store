@@ -49,9 +49,57 @@ $(document).ready(function() {
             }
         }, ]
     });
+    $('.tabs__slider-wrap').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: false,
+        responsive: [{
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+
+            }
+        }, {
+            breakpoint: 950,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+                centerPadding: '40px',
+            }
+        }, ]
+    });
     //прокрутка вверх 
     $('#scroll_top').click(function() {
         $('html, body').animate({ scrollTop: 0 }, 600);
         return false;
     });
+    //tabs
+    var tab = $('#tabs .tabs__items > div');
+    tab.hide().filter(':first').show();
+
+    // Клики по вкладкам.
+    $('#tabs .tabs__nav-items a').click(function() {
+        tab.hide();
+        tab.filter(this.hash).show();
+        $('#tabs .tabs__nav-items a').removeClass('active__nav');
+        $(this).addClass('active__nav');
+        return false;
+    }).filter(':first').click();
+
+    // Клики по якорным ссылкам.
+    $('.tabs-target').click(function() {
+        $('#tabs .tabs__nav-items a[href=' + $(this).attr('href') + ']').click();
+    });
+
+    // Отрытие вкладки из хеша URL
+    if (window.location.hash) {
+        $('#tabs-nav a[href=' + window.location.hash + ']').click();
+        window.scrollTo(0, $("#".window.location.hash).offset().top);
+    }
 })
