@@ -13,8 +13,11 @@
         margin: 0;
         padding: 0;
         display: grid;
-        grid-template-columns: fit-content(50%) fit-content(50%);
-        grid-gap: 27px;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        gap: 28px 27px;
+        // grid-template-columns: fit-content(50%) fit-content(50%);
+        // grid-template-columns: 1fr 1fr;
+        // column-gap: 27px;
     }
     &__item {
         background: #FFFFFF;
@@ -25,6 +28,9 @@
         display: block;
         height: 100%;
         text-decoration: none;
+    }
+    &__img {
+        max-width: 100%;
     }
 }
 
@@ -60,3 +66,5 @@
         color: #E71616;
     }
 }
+
+@media(max-width:992px) {}

@@ -1770,8 +1770,8 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: fit-content(50%) fit-content(50%);
-  grid-gap: 27px; }
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  gap: 28px 27px; }
 
 .news__item {
   background: #FFFFFF;
@@ -1782,6 +1782,9 @@ body {
   display: block;
   height: 100%;
   text-decoration: none; }
+
+.news__img {
+  max-width: 100%; }
 
 .news__data {
   margin-top: 40px;
