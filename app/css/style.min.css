@@ -1816,6 +1816,32 @@ body {
   line-height: 48px;
   color: #E71616; }
 
+@media (max-width: 992px) {
+  .news__data {
+    font-size: 18px;
+    line-height: 32px; }
+  .news__adress {
+    font-size: 22px;
+    line-height: 48px; }
+  .news__explot {
+    font-size: 22px;
+    line-height: 48px; } }
+
+@media (max-width: 768px) {
+  .news__data {
+    font-size: 16px;
+    line-height: 26px; }
+  .news__adress {
+    font-size: 18px;
+    line-height: 32px; }
+  .news__explot {
+    font-size: 18px;
+    line-height: 32px; } }
+
+@media (max-width: 576px) {
+  .news__items {
+    grid-template-columns: 1fr; } }
+
 .services__wrap {
   padding-top: 40px;
   padding-bottom: 137px; }
